@@ -1,0 +1,26 @@
+{
+    "name": "aurelzefi/container",
+    "description": "A package to use dependency injection in your application.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurel Zefi",
+            "email": "aurelzefi1994@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Aurel\\Container\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
