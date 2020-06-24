@@ -6,17 +6,19 @@ class Container
 {
     protected $bindings = [];
 
-    public function bind($abstract, $concrete)
+    protected $instances = [];
+
+    public function bind($abstract, $concrete = null, $singleton = false)
     {
-        //
+        $this->bindings[$abstract] = compact('concrete', 'singleton');
     }
 
-    public function singleton($abstract, $concrete)
+    public function singleton($abstract, $concrete = null)
     {
-        //
+        $this->bind($abstract, $concrete, true);
     }
 
-    public function get($abstract)
+    public function get($abstract, array $parameters = [])
     {
         //
     }
