@@ -83,6 +83,15 @@ $container->bind(Database::class, function ($app) {
 });
 ```
 
+### Binding Singletons
+
+Binding a singleton means that the `Database` instance will be resolved only the first time, and on the subsequent
+ injection, that same instance will be returned.
+
+```php
+$container->singleton(Database::class, MySql::class);
+```
+
 ### Resolving
 
 ```php
