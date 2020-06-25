@@ -110,5 +110,5 @@ $container->get(Database::class, ['connection' => new Connection()]);
 ### Calling Methods
 
 ```php
-$container->get(Database::class, 'select', ['columns' => ['id', 'name']]);
+$container->call(Database::class, 'select', ['columns' => ['id', 'name']]);
 ```
