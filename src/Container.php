@@ -119,7 +119,7 @@ class Container
      *
      * @throws \ReflectionException
      */
-    public function build($concrete, $parameters)
+    protected function build($concrete, $parameters)
     {
         if ($concrete instanceof Closure) {
             return $concrete($this, $parameters);
