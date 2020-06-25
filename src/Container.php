@@ -27,7 +27,7 @@ class Container
     /**
      * Register a binding in the container.
      *
-     * @param  \Closure|string  $abstract
+     * @param  string  $abstract
      * @param  mixed  $concrete
      * @param  bool  $singleton
      * @return void
@@ -44,7 +44,7 @@ class Container
     /**
      * Register a singleton binding in the container.
      *
-     * @param  \Closure|string  $abstract
+     * @param  string  $abstract
      * @param  mixed  $concrete
      * @return void
      */
@@ -60,7 +60,7 @@ class Container
      * @param  array  $parameters
      * @return mixed
      *
-     * @throws \Exception
+     * @throws \ReflectionException
      */
     public function get($abstract, array $parameters = [])
     {
@@ -100,6 +100,7 @@ class Container
 
     /**
      * Determine if the binding is buildable.
+     *
      * @param  string  $abstract
      * @param  mixed  $concrete
      * @return bool
