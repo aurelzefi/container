@@ -197,7 +197,7 @@ class Container
     /**
      * Call a method from the container.
      *
-     * @param  object|string $object
+     * @param  object|string  $object
      * @param  string  $method
      * @param  array  $parameters
      * @return mixed
