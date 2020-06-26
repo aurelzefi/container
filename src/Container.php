@@ -119,7 +119,7 @@ class Container
      *
      * @throws \ReflectionException
      */
-    protected function build($concrete, $parameters)
+    protected function build($concrete, array $parameters)
     {
         if ($concrete instanceof Closure) {
             return $concrete($this, $parameters);
@@ -149,7 +149,7 @@ class Container
      *
      * @throws \ReflectionException
      */
-    protected function resolveDependencies(array $dependencies, $parameters)
+    protected function resolveDependencies(array $dependencies, array $parameters)
     {
         $results = [];
 
