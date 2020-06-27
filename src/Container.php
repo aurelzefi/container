@@ -3,7 +3,6 @@
 namespace Aurel\Container;
 
 use Closure;
-use Exception;
 use ReflectionClass;
 use ReflectionMethod;
 use ReflectionParameter;
