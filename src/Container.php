@@ -14,7 +14,7 @@ class Container
      *
      * @var array
      */
-    public $bindings = [];
+    protected $bindings = [];
 
     /**
      * The singleton bindings in the container.
